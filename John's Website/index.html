@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>J.E. McDonald | Author</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#top" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Works</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Works</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px; width: 100%;" id="top">
+    <img src="/assets/john-hero.jpg" alt="" style="width: 65%; height: auto;">
+  <h1 class="w3-margin w3-jumbo">J.E. MCDONALD</h1>
+  <p class="w3-xlarge">AUTHOR</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="about">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About John</h1>
+      <h5 class="w3-padding-32">J.E. (John) McDonald is a storyteller who allows his heart and imagination to lead the way, and most of the time, he doesn't even know how his stories will end.</h5>
+
+      <p class="w3-text-grey">John grew up in Louisville, Kentucky with his parents and three brothers. He moved to the Dallas-Fort Worth area during his high school years and resides in that area still today. Some of his fondest memories are of his mom telling him bedtime stories. John has been telling and writing stories most of his life, and with the encouragement of family and friends, he took the next step into book writing. His highest hope is that you will find some joy in reading his books.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="/assets/book-art.jpg" alt="" style="width: 65%; height: auto;">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>John's Works</h1>
+      <h5 class="w3-padding-32">Fires and a Friend: The Adventures of Cluck and Sandrell Book 1</h5>
+
+      <p class="w3-text-grey">John's latest book is the first installment in a charming series about an unlikely duo of friends named Cluck and Sandrell. Lorem ipsum dolor..........</p>
+      <div>
+          <h3>Purchase Now on:</h3>
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Amazon</button>
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Page Publishing</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1>Contact John</h1>
+    <form
+  action="https://formspree.io/f/xwkagdvl"
+  method="POST"
+>
+  <label style="padding: 15px; margin: 25px;">
+    Your email:
+    <input type="email" name="_replyto" style="margin: 5px;">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" style="min-width: 250px; min-height: 50px;"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
